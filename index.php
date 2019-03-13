@@ -213,6 +213,18 @@
                 </div>
                 <div class="img-box size-8 mineSweeper"></div>
             </div>
+            
+            <div class="pageSpacer"></div>
+            
+            <div class="chaptCont-norm grey shad">
+                <div class="img-box size-8 web"></div>
+                <div class="txt-box size-10">
+                    <h3>Portfolio Website</h3>
+                    <p>Its this website but if you want to see the code the link to the github is directly below.</p>
+                    <a href="https://github.com/MartiniDesignz/portfolio-website" class="gitHubbtn" target="_blank">See in Git Hub</a>
+                    <div class="pageSpacer"></div>
+                </div>
+            </div>
         </div>
         <div class="pageSpacer"></div>
         <div class="pageSpacer"></div>
