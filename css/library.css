@@ -1,0 +1,743 @@
+/*This is the CSS for every thing*/
+
+/* general items */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;/*default font*/
+    background: #fff;
+}
+
+.pageSpacer{/* for putting vertical space inbetween elements */
+    height: 30px;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+/* shaddows */
+.gen-shaddow{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);}
+
+/* responsive stuff */
+.mobile{display: none;}
+.pc{display: block;}
+
+/* positioning */
+.L{position: relative; float: left;}/* float left */
+.R{position: relative;float: right;}/* float right */
+.C{margin: auto;}
+
+.full_page{height: 90%;}
+
+/* basic background colors */
+.red{background: red;}
+.blue{background: blue;}
+.black{background: black;}
+.purple{background: purple;}
+.green{background: green;}
+.white{background: white;}
+.grey{background: #f2f2f2;}
+
+.Tred{color: red;}
+.Tblue{color: blue;}
+.Tblack{color: black;}
+.Tpurple{color: purple;}
+.Tgreen{color: green;}
+.Twhite{color: white;}
+
+.Tcent{text-align: center;}
+.TL{text-align: left;}
+.TR{text-align: right;}
+
+/* width intervals*/
+.size-1{width: 5%;}
+.size-2{width: 10%;}
+.size-3{width: 15%;}
+.size-4{width: 20%;}
+.size-5{width: 25%;}
+.size-6{width: 30%;}
+.size-7{width: 35%;}
+.size-8{width: 40%;}
+.size-9{width: 45%;}
+.size-10{width: 50%;}
+.size-11{width: 55%;}
+.size-12{width: 60%;}
+.size-13{width: 65%;}
+.size-14{width: 70%;}
+.size-15{width: 75%;}
+.size-16{width: 80%;}
+.size-17{width: 85%;}
+.size-18{width: 90%;}
+.size-19{width: 95%;}
+.size-20{width: 100%;}
+
+ /* flex container */
+.flex-container-small {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+/* more gen*/
+
+.divLine{/*styling for the line that visualy divides different sections of a page*/
+    width: 80%;
+    height:2px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    position: relative;
+    float: left;
+    background: #cbcaca;
+}
+
+.flex-container .divLine{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+
+.flex-container h1{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.flex-container-small .divLine{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+
+.flex-container-small h1{
+    width: 100%;
+    margin-left: 0%;
+}
+
+
+.gitHubbtn{
+    background: grey;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.gitHubbtn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #3c3c3c;
+}
+
+/* -=-==--==-=-=-=-==-=-==-=-==-=-=-=-==-=--=-==-=-=-=-=-= Cards */
+[class^="card"] {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+    width: 320px;
+    padding: 10px;
+    margin: 5px;/* total width of 350px */
+    cursor: default;
+    word-wrap: break-word;
+    text-decoration: none;
+    color: black;
+}
+
+.card-click:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); cursor: pointer;}
+
+[class^="card"] h3{font-size: 30px; width: 100%;}/* header */
+[class^="card"] i{font-size: 80px; width: 100%;}/* icon */
+[class^="card"] p{font-size: 20px;}/* text */
+
+
+[class^="sCard"] {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+    width: 140px;
+    padding: 5px;
+    margin: 15px;/* total width of 250px */
+    cursor: default;
+    word-wrap: break-word;
+    text-decoration: none;
+    color: black;
+}
+
+.sCard-click:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); cursor: pointer;}
+
+[class^="sCard"] h3{font-size: 15px; width: 100%;}/* header */
+[class^="sCard"] i{font-size: 40px; width: 100%;}/* icon */
+[class^="sCard"] p{font-size: 10px;}/* text */
+
+                                    /* Circle Card */
+/* description: 
+
+    The circle card is mainly going to be used for the bottom contact buttons.
+It has a circle frame with an optional pop up box to display the hidden info.
+ */
+
+.circleCardBoxCont{
+    z-index: 0;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+.circleCardBanner{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background: none;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+}
+
+.circleCardBanner h4{
+    width: 300px;
+    position: relative;
+    float: right;
+    font-size: 30px;
+    margin: 0;
+}
+.circleCardBanner p{
+    position: relative;
+    float: left;
+    width: 300px;
+    font-size: 20px;
+}
+
+.circleCardBoxCont:hover{z-index: 2;}
+.circleCardBoxCont:hover .circleCardBanner{
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 400px;
+}
+
+.circleCard{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    float: left;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.phone-Green{background: #00ff00; color: white;}
+.mail-Red{background: #f20000; color: white;}
+.circleCard i{font-size: 80px; width: 100%; margin-top: 10px;}/* icon */
+.click{cursor: pointer;}
+
+/* =-=-=-=-==-=-=-==-=-==-=-==-=-=-=--= Quater style (more like half but quarter sounds better) */
+.quarter{
+    width: 25%;
+    position: relative;
+    float: left;
+    margin: 4%;
+    padding: 2%;
+}
+.quarter h3{/* use the h3 for the header */
+    font-size: 30px;
+}
+.quarter p{
+    font-size: 27px;
+}
+.quarter .imgCont{
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.quater_img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* -=-=-=-==-=-=-=-=-=-==-=-=-=-==-=-=-==-  Story style (has chapters)*/
+
+[class^="chaptCont"]{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+.shad{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);}
+
+[class*="-rev"]{flex-flow: row wrap-reverse;}
+
+[class*="-norm"]{flex-flow: row wrap;}
+
+[class*="-box"]{
+    margin: 10px;
+    min-height: 200px;
+}
+
+.txt-box{text-align: center;}
+.txt-box h3{font-size: 30px; width: 100%;}
+.txt-box p{font-size: 20px; width: 100%;}
+
+
+.img-box{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img_cont{
+    background: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.just_img{
+    width: 100%;
+    height: auto;
+}
+
+.bannerCont{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 75%;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    word-wrap: break-word;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+.bannerCont h3{ font-size: 50px;}
+.bannerCont p{font-size: 35px;}
+
+
+.advacedBanner{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-attachment: fixed;/*makes the pic seem stationary*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.advacedBanner h3{
+    font-size: 60px; 
+    width: 100%; 
+    margin-top: 20%;
+    margin-bottom: 1%;
+}
+.advacedBanner p{
+    font-size: 20px;
+    margin-top: 0;
+}
+
+                                       /* hero img */
+[class*="-hero"]{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    word-wrap: break-word;
+    background-attachment: fixed;/*makes the pic seem stationary*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    cursor: pointer;
+}
+
+.hero-txt{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-txt p{font-size: 20px;}
+.hero-txt h1{font-size: 50px; font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; margin-bottom: 0%;}
+
+                                            /* navigation bar */
+#navBar{
+    height: 56px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    transition: .4s;
+}
+#navBar a{cursor: pointer; z-index: 2;}
+.nav-logo{height: 100%; position: relative; float: left;}
+.nav-txt{
+    font-size: 24px;
+    margin-top: 15px;
+    position: relative;
+    float: left;
+    color:white;
+}
+.phoneNum{margin-left: 15px;}
+
+.btnContainer{
+    width: 100vw; 
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    background: none;
+    height: 100%; 
+    display: block;
+    z-index: -1;
+}
+
+
+.innerCont{ 
+    background: none;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+}
+
+
+[class*="btnGroup-"]{
+    position: relative;
+    float: left;
+    width: auto;
+    height: 56px;
+    display: block;
+}
+
+
+.navBtn{
+    width: 140px;
+    height: 56px;
+    text-align: left;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.navBtn p{width: 75%; position: relative; float: left; transition-duration: .3s;}
+
+.navBtn:hover{background: black;}
+.navBtn:hover p{color: red;}
+
+[class^="dropDown-"]:hover [class^="dropDown-"]~.navBtn {background: black;}
+
+.activeBlockCont{
+    height: 34.5px;
+    margin-top: 11.5px;
+    width:5px;
+    margin-left: 5%;
+    margin-right: 3%;
+    position: relative;
+    float: left;
+    display: inline-block;
+}
+
+.activeBlock{
+    height: 0%;
+    width: 100%;
+    position: relative;
+    float: left;
+    background: white;
+    transition-duration: .4s;
+}
+
+
+.navBtnCont{
+    height: auto;
+    width: auto;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.navBtn:hover .activeBlock{height: 100%;}
+
+
+
+[class^="dropDown-"]{width: 200px; display: none; position: absolute; top: 100%; background: rgba(0, 0, 0, 0.8);}
+
+.innerBtn{width:100%; cursor: pointer; position: relative; float: right;}
+
+.innerBtn p{text-align: left; margin-left: 10px;}
+.innerBtn:hover>p{ color: red; margin-left: 15px;}
+
+.dropBtn{
+    height: 100%;
+    width: 16%;
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+    float: left;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+.dropBtn i{text-align: center; position: relative; top: 20px; left: 2%;}
+
+.dropBtn .fa-minus{display: none; }
+
+
+                    /* More Button stuff */
+
+.moreBtn{ /* navBar height is 56px */
+    height: 40px;
+    width: 40px;
+    margin: 8px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    z-index: 3;
+}
+
+.line{
+    width: 40px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    -webkit-transition: top .5s, width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: top .5s,  background 1s, transform 1s;
+}
+
+/* the total height is 40px, position is 15px apart - 1/2 the width of the line  */
+.line1{top:5px;}
+.line2{top:18.5px;}
+.line3{top:33.5px;}
+
+.linePos1{/*change to active for mobile*/
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+    top: 20px;
+    background: rgb(180, 0, 0);
+}
+.linePos2{/*change to active for mobile*/
+    background: rgba(255, 0, 0, 0);
+    top:18.5px;
+}
+.linePos3{/*change to active for mobile*/
+    -webkit-transform: rotate(-45deg); /* Safari */
+    transform: rotate(-45deg);
+    top: 20px;
+    background: rgb(180, 0, 0);
+}
+                        /* Icon Nav */
+.iconNav{
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* new */
+.iconCircleCont{
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+.iconCircleBack{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.iconBtn{
+    width: 150px;
+    height: auto;
+    margin: 20px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+.iconBtn i{
+    font-size: 80px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+.iconBtn p{
+    width: 100%;
+    display: block;
+    position: relative;
+    float: left;
+    font-size: 30px;
+}
+
+.iconBtn:hover .iconCircleBack{background: grey; box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);}
+
+/* when sticky is added */
+.sticky{background: rgba(0, 0, 0, 0.85); position: fixed; top:56px; left: 0;}
+
+.sticky .iconBtn i{font-size: 30px;}
+.sticky .iconBtn p{display: none;}
+.sticky .iconBtn{width: 40px; color: white; margin: 10px;}
+
+.stickySpacer{display: block; width: 100%; position: relative; float: left; height: 0;}
+/*footer stuff*/
+
+#footer{
+    height: auto;
+    position: relative;
+    float: left;
+    background: black;
+    width: 100%;
+}
+.foot{
+    width: 33%;
+    position: relative;
+    float: left;
+}
+
+.foot h4{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.foot p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+}
+
+#leftFoot{text-align: center;}
+
+
+#leftFoot i{
+    color:white;
+    font-size: 50px;
+    padding: 2%;
+    text-align: center;
+}
+
+#btmSpacer{width: 100%; height: 100px;}
+
+/* animations (these animations will serve no real functionality only astetics)*/
+
+/* first func */
+.mymove-animate{
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+    0%   {margin: 0px;}
+    25%  {margin: 200px;}
+    25%  {margin: 300px;}
+    75%  {margin: 200px}
+    100% {margin: 100px;}
+}
+
+@keyframes mymove {/* Standard syntax */
+    0%   {margin-left: 0px;}
+    25%  {margin-left: 200px;}
+    25%  {margin-left: 300px;}
+    75%  {margin-left: 200px}
+    100% {margin-left: 100px;}
+}
+
+
+/* general responsive  */
+
+
+/* responsive */
+@media screen and (max-width: 1025px) {/* small laptop */
+    .phoneNum{display: none;}
+}
+
+@media screen and (max-width: 800px) {/* tablet */
+    .foot{width: 100%;}
+    .btnContainer{
+        height: 100vh; 
+        background: rgba(0, 0, 0, 0.53);
+        display: none;
+        z-index: 2;
+    }
+    
+    .navBtnCont{width: 100%; position: relative; float: left;}
+    .innerCont{background: rgb(26, 26, 26);}
+    [class*="btnGroup-"]{position: relative; float: right; width: 100%; height: auto;}
+    .navBtn{width: 100%; float: left; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) ;}
+    .navBtn p{width: 65%;}
+    .innerBtn{margin-left: 15%; width: 85%;}
+    
+    [class^="dropDown-"]{/* make translation with jQuery */
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+        display: none;
+    }
+    .img-box{width: 75%;}
+    .img_cont{width: 75%;}
+    .mobile{display: block;}
+    .pc{display: none;}
+    /* on mobile, the image is distorted if the background attachment is set to fixed */
+    .advacedBanner{background-attachment: scroll;/*makes the pic scroll normal*/}
+    [class*="-hero"]{background-attachment: scroll;}
+    
+    .advacedBanner h3{font-size: 40px;}
+    .advacedBanner p{font-size: 20px;}
+}
+
+@media screen and (max-width: 426px) {/* phone */
+    .theBtns{
+        width: 75%;
+        height: 100%;
+        transition-duration: 1s;
+        display: none;
+        background: purple;
+        position: absolute;
+        right: 0;
+        top:56px;
+    }
+    
+    [class^="chaptCont"]{width: 94%; margin: auto;}
+    [class^="chaptCont"] .txt-box{width: 90%; margin: auto;}
+    .bannerCont{width: 100%;}
+}
+
+
+

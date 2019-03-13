@@ -1,0 +1,27 @@
+/* this file is for adding all the images */
+.solder-dark{background-image: url("pics/hero/soldering-img-dark.jpg");}
+
+.jorts-dark{background-image: url("pics/examplePics/All-Mighty_jorts-dark.jpg");}
+.jorts{background-image: url("pics/examplePics/All-Mighty_jorts.jpg");}
+
+
+.tools-dark{background-image: url("pics/hero/IMG_0682-dark.jpg");}
+.wire-dark{background-image: url("pics/hero/wire_dark.jpg");}
+
+.backOfAmp-dark{background-image: url("pics/hero/audio/amp-dark.jpg");}
+.rca_and_keyboard-dark{background-image: url("pics/hero/system-keyboard-dark.jpg");}
+
+.smallAmp-dark{background-image: url("pics/hero/holding-dark.jpg");}
+.labVIEW{background-image: url("pics/projects/Hangman%20Block%20Diagram.JPG");}
+.resumeCode{background-image: url("pics/projects/resumecodeSlantImg.png");}
+
+.gavDesign{background-image: url("pics/projects/gravDesign.JPG");}
+.davEdit{background-image: url("pics/projects/videoEdit.JPG");}
+.cadImg{background-image: url("pics/projects/Cad.JPG");}
+
+.glove{background-image: url("pics/projects/glove_Circuit.JPG");}
+.scoreBoard{background-image: url("pics/projects/ScoreBoard(master).JPG");}
+.scoreBoardTran{background-image: url("pics/projects/scoreBoard_transceiver_(slave).JPG");}
+
+.mineSweeper{background-image: url("pics/projects/MineSweeper.JPG");}
+.proj{background-image: url("pics/lit%20keyboard%20pic.JPG");}
