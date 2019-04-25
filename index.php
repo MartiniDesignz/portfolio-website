@@ -96,7 +96,7 @@
         
         
         <div class="flex-container el-4">
-            <h1>Software I've Use</h1>
+            <h1>Software I've Used</h1>
             <div class="divLine"></div>
             <div class="chaptCont-rev grey shad">
                 <div class="txt-box size-10">
@@ -148,7 +148,7 @@
             <div class="chaptCont-norm grey shad">
                 <div class="img-box size-8 scoreBoardTran"></div>
                 <div class="txt-box size-10">
-                    <h3>Micro controllers/processors</h3>
+                    <h3>Micro controllers</h3>
                     <p>I have done a lot of personal projects using arduinos and rasperry pi's.</p>
                 </div>
             </div>
@@ -207,7 +207,7 @@
             <div class="chaptCont-rev grey shad">
                 <div class="txt-box size-10">
                     <h3>MineSweeper in C++</h3>
-                    <p>Its the classic minesweeper written in C++ that runs in a command prompt window.</p>
+                    <p>Its the classic minesweeper written in C++ that runs in a console window.</p>
                     <a href="https://github.com/MartiniDesignz/MineSweeper" class="gitHubbtn" target="_blank">See in Git Hub</a>
                     <div class="pageSpacer"></div>
                 </div>
@@ -224,6 +224,18 @@
                     <a href="https://github.com/MartiniDesignz/portfolio-website" class="gitHubbtn" target="_blank">See in Git Hub</a>
                     <div class="pageSpacer"></div>
                 </div>
+            </div>
+            
+            <div class="pageSpacer"></div>
+            
+            <div class="chaptCont-rev grey shad">
+                <div class="txt-box size-10">
+                    <h3>Solitaire in C++</h3>
+                    <p>Its classic Solitaire written in C++ that runs in a console window.</p>
+                    <a href="https://github.com/MartiniDesignz/Solitaire" class="gitHubbtn" target="_blank">See in Git Hub</a>
+                    <div class="pageSpacer"></div>
+                </div>
+                <div class="img-box size-8 solitaire"></div>
             </div>
         </div>
         <div class="pageSpacer"></div>
